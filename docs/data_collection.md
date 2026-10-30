@@ -46,3 +46,31 @@ as though it were known in August.
 Quick Stats load_time is a loading timestamp; do not automatically treat it
 as the date a number was first publicly available. We use a predeclared survey
 buffer and disclose the absence of full vintage reconstruction.
+
+
+## Annual soybean yield download
+
+- Download date: 2026/10/30
+- Source: USDA NASS Quick Stats
+- Source URL: https://www.nass.usda.gov/Quick_Stats/
+- Saved file: `data/raw/soybean_yield_annual.csv`
+- Format: CSV
+
+### Query filters
+
+- Program: SURVEY
+- Sector: CROPS
+- Group: FIELD CROPS
+- Commodity: SOYBEANS
+- Category: YIELD
+- Data item: SOYBEANS - YIELD, MEASURED IN BU / ACRE
+- Geographic level: STATE
+- States: IOWA, ILLINOIS, INDIANA, MINNESOTA, NEBRASKA
+- Years: 2000–2025
+- Frequency: ANNUAL
+- Reference period: YEAR
+- Domain: TOTAL
+
+### Processing status
+
+The downloaded CSV contents have not been edited. Coverage, missing values and duplicate records have not yet been checked.
