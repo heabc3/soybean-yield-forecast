@@ -1,0 +1,8 @@
+# Initial dependency ranges for Python 3.13.
+# Record installed versions in requirements-lock.txt after setup succeeds.
+pandas>=2.2.3,<4
+numpy>=2.1,<3
+scikit-learn>=1.6,<2
+matplotlib>=3.10,<4
+seaborn>=0.13.2,<1
+ipykernel>=6.29,<8
