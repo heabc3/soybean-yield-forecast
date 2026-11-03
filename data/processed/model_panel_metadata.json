@@ -1,0 +1,55 @@
+{
+  "created_at_utc": "2026-10-30T19:52:17+00:00",
+  "rows": 130,
+  "states": [
+    "IA",
+    "IL",
+    "IN",
+    "MN",
+    "NE"
+  ],
+  "start_year": 2000,
+  "end_year": 2025,
+  "forecast_month_day": "08-01",
+  "survey_cutoff_month_day": "07-25",
+  "comparison_days": 28,
+  "source_database": "soybeans.sqlite",
+  "source_table_sha256": {
+    "annual_yield": "c3391a9267e14d02bb511dcbdc12c698d6ca08c6807e7a7ad235ba3b054d3a04",
+    "weekly_condition": "87aeca7d811c84bd26bc21410f692b68f48304170736c61ceb51d33f869229eb"
+  },
+  "available_import_records": [
+    {
+      "dataset": "annual_yield",
+      "file_sha256": "af56f598dc6afb4def3698025d65204c8e78a7f0c7875cd0c4fbada9652128e1",
+      "source_filename": "soybean_yield_annual.csv",
+      "imported_at_utc": "2026-10-30T19:10:55+00:00",
+      "source_rows": 130
+    },
+    {
+      "dataset": "condition_excellent",
+      "file_sha256": "3b02f3431bd1cbb588736d22ae65a4cfd463c805db3a4f4c809ed50f81af6b9f",
+      "source_filename": "soybean_condition_excellent.csv",
+      "imported_at_utc": "2026-10-30T19:10:55+00:00",
+      "source_rows": 2532
+    },
+    {
+      "dataset": "condition_good",
+      "file_sha256": "24e63113f9e8dc9ae7a1319898cbbd427ce72f41da1692f7c3e8b33d4ee937f2",
+      "source_filename": "soybean_condition_good.csv",
+      "imported_at_utc": "2026-10-30T19:10:55+00:00",
+      "source_rows": 2532
+    }
+  ],
+  "sql_sha256": "5476391b1a1044285b83b7b7e225f549b668cf2d19d34406bb26fe24df1c69f7",
+  "output_csv_sha256": "d57164cbc47ab56e78f5fa307761cb882c219c02d801bc85fd5c317f2e0bb253",
+  "python": "3.13.17",
+  "pandas": "3.1.0",
+  "numpy": "2.5.4",
+  "notes": [
+    "Historical seasonal-cutoff backtest inputs; not a reconstruction of original release vintages.",
+    "GE is percent; GE change is percentage points.",
+    "No centering, detrending, scaling, or regression was fitted using the full sample.",
+    "Annual yield is the outcome label and is not used to select predictor dates or values."
+  ]
+}
